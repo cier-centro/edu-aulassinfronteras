@@ -1,0 +1,55 @@
+.slide .pane-content > .menu li ul.menu  {
+    display: block;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.slide .pane-content > .menu li > ul.menu li {
+    display: block;
+    width: 100%;
+}
+
+.slide .pane-content > .menu li > ul.menu li a {
+    display: block;
+}
+
+.slide .pane-content > .menu li > ul.menu li a.active,
+.slide .pane-content > .menu li > ul.menu li a:hover {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.slide .pane-content > .menu li:hover > ul.menu li a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .contenido-aula .pane-content .menu > li {
+        display: block;
+    }
+
+    .contenido-aula .pane-content .menu > li > a {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+@media (min-width: 993px) {
+    .slide .pane-content > .menu li ul.menu {
+        position: absolute;
+        top: 85%;
+        height: 0;
+        z-index: 5;
+    }
+
+    .slide .pane-content > .menu li:hover > ul.menu {
+        height: auto;
+        background: rgba(0, 0, 0, 0.65);
+        width: 15%;
+    }
+
+    .slide .pane-content > .menu li > ul.menu li {
+        padding: 10px;
+    }
+}
